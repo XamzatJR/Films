@@ -18,7 +18,7 @@ const setMovieList = (movies) => {
         payload: movies,
     }
 };
-const setCurrentMovie = (movie) => {
+export const setCurrentMovie = (movie) => {
     return {
         type: "SET_CURRENT_MOVIE",
         payload: movie,
@@ -40,16 +40,3 @@ export const getMovieListThunk = (page) => {
         });
     }
 };
-export const getMovieDataThunk = (id) => {
-    return (dispatch) => {
-        dispatch(setIsFetching(true))
-        moviesApi.getMovieData(id)
-        .then((res) => {
-            dispatch(setCurrentMovie(res.data.data.movie_id))
-        })
-        .catch((error) => console.log(error))
-        .finally(() => {
-            dispatch(setIsFetching(false))
-        });
-    }
-}

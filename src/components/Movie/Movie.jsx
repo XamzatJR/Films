@@ -1,9 +1,14 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { setCurrentMovie } from '../../store/actionCreators/movies'
 import classes from './Movie.module.css'
-function Movie({rating, id, cover, title, genres, year, description}) {
+function Movie({rating, id, cover, title, genres, year, movie}) {
+    const dispatch = useDispatch()
     return (
     <div className={classes.movieBlock}>
-        <div className={classes.movie}>
+        <Link to={`/movie/${id}`}>
+        <div className={classes.movie} onClick={() => dispatch(setCurrentMovie(movie))}>
             <div>
             <img src={cover} alt="" width={`100%`} height={`100%`} />
             </div>
@@ -17,13 +22,14 @@ function Movie({rating, id, cover, title, genres, year, description}) {
                 <div className={classes.genres}>
                     {genres.map(genre => {
                         return (
-                            <div key={id} className={classes.genre}>{genre}</div>
+                            <div key={genre} className={classes.genre}>{genre}</div>
                         )
                     })}
                 </div>
-                <button className={classes.btn}>More</button>
+                <button className={classes.btn} >More</button>
             </div>
         </div>
+        </Link>
         <div className={classes.title}>{title}</div>
         <div className={classes.year}>{year}</div>
     </div>
