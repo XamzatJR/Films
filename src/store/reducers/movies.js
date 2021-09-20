@@ -6,7 +6,7 @@ const initialValue = {
     isFetching: false,
     page: 1,
     movies: [],
-    currentMovie: null,
+    currentMovie: null || JSON.parse(localStorage.getItem('currentMovie')),
 };
 
 export const moviesReducer = (state = initialValue, action) => {

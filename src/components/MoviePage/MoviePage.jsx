@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import classes from './MoviePage.module.css';
 import Loader from '../Loader/Loader';
+import CommentSection from '../CommentSection/CommentSection';
 function MoviePage(props) {
     const {currentMovie, isFetching} = useSelector(state => state.moviesReducer);
     
@@ -39,7 +40,7 @@ function MoviePage(props) {
                     <div className={classes.genres}>
                         {currentMovie.genres.map(genre => {
                             return (
-                                <div className={classes.genre}>
+                                <div key={genre} className={classes.genre}>
                                     <div className={classes.circle}></div>
                                     <div className={classes.genreTitle}>{genre}</div>
                                 </div>
@@ -49,8 +50,12 @@ function MoviePage(props) {
                     
                     <h2 className={classes.synopsis}>Synopsis</h2>
                     <p className={classes.p}>{currentMovie.synopsis}</p>
+                    
+                    <CommentSection />
                 </div>
+                
             </div>
+            
             </>
         }
         </>

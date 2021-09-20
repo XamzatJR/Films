@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom'
 import { setCurrentMovie } from '../../store/actionCreators/movies'
 import classes from './Movie.module.css'
 function Movie({rating, id, cover, title, genres, year, movie}) {
+    function setMovie(movie) {
+        dispatch(setCurrentMovie(movie));
+        localStorage.setItem("currentMovie", JSON.stringify(movie));
+    }
     const dispatch = useDispatch()
     return (
     <div className={classes.movieBlock}>
         <Link to={`/movie/${id}`}>
-        <div className={classes.movie} onClick={() => dispatch(setCurrentMovie(movie))}>
+        <div className={classes.movie} onClick={() => setMovie(movie)}>
             <div>
             <img src={cover} alt="" width={`100%`} height={`100%`} />
             </div>
