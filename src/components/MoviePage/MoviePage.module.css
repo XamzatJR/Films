@@ -12,6 +12,7 @@
     margin: 0 auto;
     padding-top: 57px;
     display: flex;
+    padding-bottom: 115px;
 }
 .rating {
     display: flex;
@@ -86,4 +87,9 @@
     font-size: 20px;
     line-height: 23px;
     margin-left: 3px;
+}
+.comments {
+    margin-top: 22px;
+    font-size: 30px;
+    margin-bottom: 7px;
 }

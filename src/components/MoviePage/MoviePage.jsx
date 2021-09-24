@@ -50,7 +50,7 @@ function MoviePage(props) {
                     
                     <h2 className={classes.synopsis}>Synopsis</h2>
                     <p className={classes.p}>{currentMovie.synopsis}</p>
-                    
+                    <div className={classes.comments}>Comments</div>
                     <CommentSection />
                 </div>
                 

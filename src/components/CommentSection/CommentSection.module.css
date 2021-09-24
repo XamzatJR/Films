@@ -1,10 +1,11 @@
-.comment {
+.input {
     width: 653px;
     min-height: 95px;
     background: rgba(163, 163, 164, 0.1);
     border-radius: 5px;
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 .textarea {
     padding: 9px 9px 0 11px;
@@ -14,9 +15,11 @@
     min-height: 70px;
     outline: none;
     resize: none;
+    border: none;
     font-size: 20px;
     color: #fff;
     margin: 11px 9px 14px 12px;
+
 }
 .btn {
     width: 67px;
@@ -26,4 +29,41 @@
     border: none;
     cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.comment {
+    width: 653px;
+    min-height: 63px;
+    background: #606365;
+    border-radius: 5px;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 13px;
+}
+.commentInfo {
+    display: flex;
+    padding-top: 7px;
+}
+.you {
+    margin-right: 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.date {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.inputValue {
+    font-size: 22px;
+}
+.removeBtn {
+    width: 19px;
+    height: 19px;
+    background: #C4C4C4;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    cursor: pointer;
 }
