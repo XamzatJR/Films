@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import classes from './CommentSection.module.css';
-function CommentSection() {
+function CommentSection({id}) {
     const [value, setValue] = useState({title: ''});
     const [comment, setComment] = useState(JSON.parse(localStorage.getItem("comments")) || [])
     localStorage.setItem("comments", JSON.stringify(comment))
     function setNewComment(value) {
         const d = new Date();
-        const newComment = {...value, date: d.toLocaleString()}
+        const newComment = {...value, date: d.toLocaleString(), id: id}
         setComment([...comment, newComment]);
         localStorage.setItem("comments", JSON.stringify(comment))
         setValue({title: ''})
@@ -19,16 +19,19 @@ function CommentSection() {
        <>
        <div>
        {comment.map(el => {
+           if (el.id === id) {
             return (
-            <div key={el.date} className={classes.comment}>
-                <div className={classes.commentInfo}>
-                <div className={classes.you}>You</div>
-                <div className={classes.date}>{el?.date}</div>
+                <div key={el.date} className={classes.comment}>
+                    <div className={classes.commentInfo}>
+                    <div className={classes.you}>You</div>
+                    <div className={classes.date}>{el?.date}</div>
+                    </div>
+                    <div className={classes.inputValue}>{el?.title}</div>
+                    <button onClick={() => deleteComment(el)} className={classes.removeBtn}></button>
                 </div>
-                <div className={classes.inputValue}>{el?.title}</div>
-                <button onClick={() => deleteComment(el)} className={classes.removeBtn}></button>
-            </div>
-            )
+                )
+           }
+           
          })
         }
        </div>

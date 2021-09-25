@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 import classes from './MoviePage.module.css';
 import Loader from '../Loader/Loader';
 import CommentSection from '../CommentSection/CommentSection';
-function MoviePage(props) {
+function MoviePage() {
     const {currentMovie, isFetching} = useSelector(state => state.moviesReducer);
     
     return (
@@ -51,7 +51,7 @@ function MoviePage(props) {
                     <h2 className={classes.synopsis}>Synopsis</h2>
                     <p className={classes.p}>{currentMovie.synopsis}</p>
                     <div className={classes.comments}>Comments</div>
-                    <CommentSection />
+                    <CommentSection id={currentMovie.id} />
                 </div>
                 
             </div>
