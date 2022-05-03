@@ -33,14 +33,15 @@ function Movie({ rating, id, cover, title, genres, year, movie }) {
               <div className={classes.rating}>{rating}</div>
             </div>
             <div className={classes.genres}>
-              {genres &&
-                genres.map((genre) => {
-                  return (
-                    <div key={genre} className={classes.genre}>
-                      {genre}
-                    </div>
-                  );
-                })}
+              {genres
+                ? genres.map((genre) => {
+                    return (
+                      <div key={genre} className={classes.genre}>
+                        {genre}
+                      </div>
+                    );
+                  })
+                : null}
             </div>
             <button className={classes.btn}>More</button>
           </div>

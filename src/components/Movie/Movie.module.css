@@ -1,65 +1,65 @@
 .movie {
-    width: 263.27px;
-    height: 390.39px;
-    border: 5px solid #FFFFFF;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+  width: 263.27px;
+  height: 390.39px;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
 .movieBlock {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 .movie:hover {
-    border: 5px solid #2E95DC;
+  border: 5px solid #2e95dc;
 }
 .movie:hover .hoverInfo {
-    opacity: 1;
+  opacity: 1;
 }
 .title {
-    font-size: 20px;
-    color: #FFFFFF;
-    margin: 5px auto;
-    width: 263.27px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 5px auto;
+  width: 263.27px;
 }
 .year {
-    font-size: 16px;
-    color: #9CA1A4;
+  font-size: 16px;
+  color: #9ca1a4;
 }
 .hoverInfo {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(48, 53, 57, 0.5);
-    backdrop-filter: blur(3px);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 53, 57, 0.5);
+  backdrop-filter: blur(3px);
 }
 .rating {
-    font-size: 25px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
+  font-size: 25px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 .genres {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .genre {
-    font-size: 30px;
-    color: #FFFFFF;
+  font-size: 30px;
+  color: #ffffff;
 }
 .btn {
-    width: 119px;
-    height: 39px;
-    background: #299DED;
-    border-radius: 5px;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
+  width: 119px;
+  height: 39px;
+  background: #299ded;
+  border-radius: 5px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
 }

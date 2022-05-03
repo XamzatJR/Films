@@ -1,95 +1,93 @@
 .btn {
-    width: 67px;
-    height: 39px;
-    background: #303539;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+  width: 67px;
+  height: 39px;
+  background: #303539;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 .container {
-    width: 1196px;
-    margin: 0 auto;
-    padding-top: 57px;
-    display: flex;
-    padding-bottom: 115px;
+  width: 1196px;
+  margin: 0 auto;
+  padding-top: 57px;
+  display: flex;
+  padding-bottom: 115px;
 }
 .rating {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 77px;
-    height: 31px;
-    background: rgba(48, 53, 57, 0.85);
-    border-radius: 5px;
-    position: absolute;
-    top: 10px;
-    right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 77px;
+  height: 31px;
+  background: rgba(48, 53, 57, 0.85);
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
 }
 .rating span {
-    font-size: 25px;
-    color: #fff;
-
+  font-size: 25px;
+  color: #fff;
 }
 .rating svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 .cover {
-    position: relative;
+  position: relative;
 }
 .poster {
-    border-radius: 5px;
-    width: 466px;
-    height: 698px;
+  border-radius: 5px;
+  width: 466px;
+  height: 698px;
 }
 .circle {
-    width: 13px;
-    height: 13px;
-    background: #606365;
-    border-radius: 100%;
-    margin-right: 6px;
+  width: 13px;
+  height: 13px;
+  background: #606365;
+  border-radius: 100%;
+  margin-right: 6px;
 }
 .genre:hover .circle {
-    background: #299DED;
+  background: #299ded;
 }
 .movieInfo {
-    width: 667px;
-    margin-left: 65px;
-    color: #fff;
-
+  width: 667px;
+  margin-left: 65px;
+  color: #fff;
 }
 .genres {
-    display: flex;
-    margin: 8px 0 22px;
+  display: flex;
+  margin: 8px 0 22px;
 }
 .genre {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 17px;
 }
 .title {
-    font-size: 50px;
+  font-size: 50px;
 }
 .year {
-    font-size: 35px;
-    margin-left: 3px;
+  font-size: 35px;
+  margin-left: 3px;
 }
 .genreTitle {
-    font-size: 20px;
+  font-size: 20px;
 }
 .synopsis {
-    font-size: 30px;
-    margin-bottom: 16px;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 .p {
-    font-size: 20px;
-    line-height: 23px;
-    margin-left: 3px;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 3px;
 }
 .comments {
-    margin-top: 22px;
-    font-size: 30px;
-    margin-bottom: 7px;
+  margin-top: 22px;
+  font-size: 30px;
+  margin-bottom: 7px;
 }

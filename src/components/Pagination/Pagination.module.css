@@ -1,23 +1,23 @@
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 67px;
-    height: 39px;
-    border-radius: 50px;
-    background: #303539;
-    border: none;
-    cursor: pointer;
-    color: #299DED;
-    font-size: 25px;
-    margin-right: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 39px;
+  border-radius: 50px;
+  background: #303539;
+  border: none;
+  cursor: pointer;
+  color: #299ded;
+  font-size: 25px;
+  margin-right: 11px;
 }
 .btn:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 .current {
-    color: #606365;
+  color: #606365;
 }
 .pagination {
-    display: flex;
+  display: flex;
 }
